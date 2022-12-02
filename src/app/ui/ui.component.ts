@@ -1,5 +1,7 @@
-export function multiplication(oper1, oper2) {  
+export function sqr(oper1) {  
   // refactoring
-   let mul = oper1 * oper2;
-   return mul;
+  let sqr = 0
+   sqr = oper1 * oper1;
+
+  return sqr;
 }
