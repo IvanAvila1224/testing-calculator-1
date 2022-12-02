@@ -1,7 +1,5 @@
-export function addition(oper1, oper2) {  
-  // Refactoring
-  
-  let sum = 0;
-  sum = oper1 + oper2
-  return sum;
+export function division(oper1, oper2) {  
+  // refactoring
+  let div = oper1 / oper2;
+  return div;
 }
