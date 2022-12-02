@@ -1,45 +1,47 @@
-import { multiplication } from "./ui.component"
+import { sqr } from "./ui.component"
 
-describe('multiplication unit tests', () => {
+describe('sqr unit tests', () => {
     
-    it('Should mul 2 * 4 = 8', () => {
+    it('Should compute 2 ^ 2 = 4', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
         let result = 0;
         
         // Act
-        result = multiplication(2, 4);
+        result = sqr(2);
 
         // Assert
-        expect(result).toBe(8);
+        expect(result).toBe(4);
     })
 
-    it(' Should mul 0 * -2 = 0', () => {
+    it('Should compute 3 ^ 2 = 9', () => {
         // Arrange
         let result = 0;
         // Act
-        result = multiplication(0, -2);
+        result = sqr(3);
         // Assert
-        expect(result).toBe(0);
+        expect(result).toBe(9);
     })
 
-    it(' Should mul 3.0 * 0.5 = 1.5', () => {
+    it('Should compute 4 ^ 2 = 16', () => {
         // Arrange
         let result = 0;
         // Act
-        result = multiplication(3.0, 0.5);
+        result = sqr(4);
         // Assert
-        expect(result).toBe(1.5);
+        expect(result).toBe(16);
     })
 
-    it(' Should mul 2.0 + 1.5 = 3.0', () => {
+    it('Should compute 5 ^ 2 = 25', () => {
         // Arrange
         let result = 0;
         // Act
-        result = multiplication(2.0, 1.5);
+        result = sqr(5);
         // Assert
-        expect(result).toBe(3.0);
+        expect(result).toBe(25);
     })
+
+   
 
 })
