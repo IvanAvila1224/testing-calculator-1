@@ -1,45 +1,45 @@
-import { addition } from "./ui.component"
+import { division } from "./ui.component"
 
-describe('addition unit tests', () => {
+describe('division unit tests', () => {
     
-    it('Should add 2 + 2 = 4', () => {
+    it('Should divide 2 / 2 = 1', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
         let result = 0;
         
         // Act
-        result = addition(2, 2);
+        result = division(2, 2);
 
         // Assert
-        expect(result).toBe(4);
+        expect(result).toBe(1);
     })
 
-    it('Should add 0 + -2 = -2', () => {
+    it('Should divide 9 / 2 = 4.5', () => {
         // Arrange
         let result = 0;
         // Act
-        result = addition(0, -2);
+        result = division(9, 2);
         // Assert
-        expect(result).toBe(-2);
+        expect(result).toBe(4.5);
     })
 
-    it('Should add 3.0 + 0.1416 = 3.1416', () => {
+    it('Should divide 3.0 / 0.5 = 6.0', () => {
         // Arrange
         let result = 0;
         // Act
-        result = addition(3.0, 0.1416);
+        result = division(3.0, 0.5);
         // Assert
-        expect(result).toBe(3.1416);
+        expect(result).toBe(6.0);
     })
 
-    it('Should add 2.0 + 0.7 = 2.7', () => {
+    it(' Should divide 0 / 1 = 0', () => {
         // Arrange
         let result = 0;
         // Act
-        result = addition(2.0, 0.7);
+        result = division(0, 1);
         // Assert
-        expect(result).toBe(2.7);
+        expect(result).toBe(0);
     })
 
 })
