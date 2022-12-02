@@ -1,7 +1,6 @@
-export function sqrt(oper1) {  
+export function substraction(oper1, oper2) {  
   // refactoring
-  let sqrt = 0;
-
-  sqrt = Math.sqrt(oper1);
-  return (sqrt);
+  let subs =0
+  subs = oper1 - oper2;
+  return subs;
 }
