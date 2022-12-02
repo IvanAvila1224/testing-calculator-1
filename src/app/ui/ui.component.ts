@@ -1,7 +1,5 @@
-export function exp(base, exp) {  
+export function multiplication(oper1, oper2) {  
   // refactoring
-
-  let pow = 0;
-  pow = Math.pow(base, exp);
-  return pow;
+   let mul = oper1 * oper2;
+   return mul;
 }

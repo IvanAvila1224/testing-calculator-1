@@ -1,46 +1,45 @@
-import { exp } from "./ui.component"
+import { multiplication } from "./ui.component"
 
-describe('exp unit tests', () => {
+describe('multiplication unit tests', () => {
     
-    it('Should pow 2 ^ 0 = 1', () => {
+    it('Should mul 2 * 4 = 8', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
         let result = 0;
         
         // Act
-        result = exp(2, 0);
+        result = multiplication(2, 4);
 
-        // Assert
-        expect(result).toBe(1);
-    })
-
-    it('Should pow 2 ^ 1 = 2', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = exp(2, 1);
-        // Assert
-        expect(result).toBe(2);
-    })
-
-    it('Should pow 2 ^ 2 = 4', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = exp(2, 2);
-        // Assert
-        expect(result).toBe(4);
-    })
-
-    it('Should pow 2 ^ 3 = 8', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = exp(2, 3);
         // Assert
         expect(result).toBe(8);
     })
 
+    it(' Should mul 0 * -2 = 0', () => {
+        // Arrange
+        let result = 0;
+        // Act
+        result = multiplication(0, -2);
+        // Assert
+        expect(result).toBe(0);
+    })
+
+    it(' Should mul 3.0 * 0.5 = 1.5', () => {
+        // Arrange
+        let result = 0;
+        // Act
+        result = multiplication(3.0, 0.5);
+        // Assert
+        expect(result).toBe(1.5);
+    })
+
+    it(' Should mul 2.0 + 1.5 = 3.0', () => {
+        // Arrange
+        let result = 0;
+        // Act
+        result = multiplication(2.0, 1.5);
+        // Assert
+        expect(result).toBe(3.0);
+    })
 
 })
