@@ -1,5 +1,7 @@
-export function division(oper1, oper2) {  
+export function exp(base, exp) {  
   // refactoring
-  let div = oper1 / oper2;
-  return div;
+
+  let pow = 0;
+  pow = Math.pow(base, exp);
+  return pow;
 }
